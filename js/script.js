@@ -11,7 +11,7 @@ async function start() {
     const LabeledFaceDescriptors = await loadLabeledImages()
     const faceMatcher = new faceapi.FaceMatcher(LabeledFaceDescriptors,0.5) //tạo bản nhận diện khuôn mặt thành tên
     
-    document.getElementById('note').innerHTML = 'Đã tải xong dữ liệu'
+    document.getElementById('note').innerHTML = 'Đã xử lý xong dữ liệu'
 
     const imgLoad = document.getElementById('imgload')
     imageUpload.addEventListener('change', async() => { 
